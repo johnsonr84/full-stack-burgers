@@ -1,10 +1,12 @@
 {
   "name": "burger",
   "version": "1.0.0",
-  "description": "assignment 13",
+  "description": "Express, Mysql, and Node application to allow users to input burgers they want to eat",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon serve.js"
   },
   "repository": {
     "type": "git",
@@ -17,8 +19,12 @@
   },
   "homepage": "https://github.com/johnsonr84/burger#readme",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-handlebars": "^5.3.3",
     "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
   }
 }
