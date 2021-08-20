@@ -27,4 +27,20 @@
             </ul>
         </div>
     </div>
+    {{!------ Burgers devoured ------}}
+    <div class="six columns list">
+        <h4> Burgers Already Devoured
+            <i class="fa fa-smile-o smile" aria-hidden="true"></i>
+        </h4>
+        {{!-- Dynamically generated list --}}
+        <ul class="list devoured">
+            {{#each burgers}}
+            {{#if devoured}}
+            <li class="list-item">
+                {{id}}. {{burger_name}}
+            </li>
+            {{/if}}
+            {{/each}}
+        </ul>
+    </div>
 </div>
