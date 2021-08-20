@@ -11,5 +11,20 @@
                 <i class="fa fa-cutlery utensil" aria-hidden="true"></i>
             </h4>
         </div>
+        {{!-- Dynamically generated list --}}
+        <div>
+            <ul class="list to-devour">
+                {{#each burgers}}
+                {{#unless devoured}}
+                <li class="list-item">
+                    {{id}}. {{burger_name}}
+                    <button type="submit" class="u-pull-right devour-btn" data-id="{{id}}"
+                        data-devoured={{devoured}}>{{burger_name}}
+                    </button>
+                </li>
+                {{/unless}}
+                {{/each}}
+            </ul>
+        </div>
     </div>
 </div>
