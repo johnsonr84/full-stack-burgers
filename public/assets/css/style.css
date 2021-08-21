@@ -1,0 +1,38 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.container-fluid {
+    background-image: url("../img/bkgrd.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    height: 100vh;
+}
+
+h1 {
+    font-family: 'Rampart One', cursive;
+}
+
+h4 {
+    font-family: 'Rampart One', cursive;
+}
+
+.btn {
+    /* font-family: 'Rampart One', cursive; */
+}
+
+.col-5 {
+    background-color: rgba(255, 255, 255, 0.7)    /* 50% opaque blue */;
+    border-radius: 10px;
+}
+
+textarea {
+    border-radius: 10px;
+}
+
+ul {
+	list-style: none;
+}
