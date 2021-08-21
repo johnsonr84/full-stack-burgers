@@ -2,15 +2,15 @@ const orm = require('../config/orm.js');
 
 const burger = {
   select(cb) {
-      orm.selectAll('burgers', (res) => cb(res));
-  },  
-
-  insert(reqBody, cb) {
-        orm.insertOne('burgers', reqBody, (res) => cb(res));
+    orm.selectAll('burgers', (res) => cb(res));
   },
 
-  update(id, cb) {
-      orm.updateOne(id, (res) => cb(res));
+  insert: (cols, vals, cb) => {
+    orm.insertOne('burgers', cols, vals, (res) => cb(res));
+  },
+
+  update: (objColVals, condition, cb) => {
+    orm.updateOne('burgers', objColVals, condition, (res) => cb(res));
   }
 }
 
