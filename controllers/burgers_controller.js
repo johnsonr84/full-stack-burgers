@@ -1,5 +1,5 @@
 const express = require('express');
-const burger = require('../models/burgers.js');
+const burger = require('../models/burger.js');
 const router = express.Router();
 
 // Get Route
