@@ -2,11 +2,11 @@
   "name": "burger",
   "version": "1.0.0",
   "description": "Express, Mysql, and Node application to allow users to input burgers they want to eat",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "watch": "nodemon serve.js"
+    "watch": "nodemon server.js"
   },
   "repository": {
     "type": "git",
